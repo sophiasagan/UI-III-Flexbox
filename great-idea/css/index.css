@@ -63,124 +63,143 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-.content{
-	max-width: 70%;
-	margin: auto;
-	background-image: url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-	min-height: 100%;
-}
-
-body{
-	background-color:cadetblue;
- 	
-}
-
-.navigation{
-	background-color:powderblue;
-	position: fixed;
-	z-index: 10;
-	border: 5px solid teal;
-}
-
-.navigation a{
-	display: inline-block;
-	margin: 20px 50.4px;
-	padding: 15px;
-	color: rgb(16, 2, 54);
-	text-decoration: none;
-	font-family: 'Mansalva', cursive;
-}
-
-.navigation a:hover{
-	color: teal;
-	text-shadow: 2px 2px 5px rgb(72, 19, 85);
-}
-
-header {
-	width: 400px;
-	height: 400px;
-	display: inline-block;
-	margin: 50px 200px 50px 200px;
-	padding: 50px;
-	text-align:center;
-	font-size:86px;
+.container {
+  width: 900px;
+  margin: 0 auto;
 }
 
 
-.getStarted{
-	font-size:20px;
-	padding: 10px;
-	margin: 10px;
-	border: 3px solid black;
-	font-family: 'Mansalva', cursive;
-
+header{
+	display:flex;
+	justify-content:space-between;
 }
 
-.topImg{
-
-	display:inline-block;
-	margin: 150px 100px 15px 0px;
+header nav {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
 }
 
-.topContent{
-	border-top: 1px solid gray;
-	padding: 10px 0px 10px 0px;
-	
+header nav a {
+  display: flex;
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
 }
 
-h2{
-	padding: 10px;
-	margin: 10px 0px 50px 20px;
-	display: inline-block;
-	position: absolute;
+header nav a:hover {
+	transform: scale(1.5);
+	color: #484c7f;
 }
 
-.aboveContent p{
-	width: 655px;
-	height: 50px;
-	padding: 10px 10px 10px 30px;
-	margin: 50px 0px 50px 0px;
-	display: inline-block;
+header nav a:first-child {
+  margin-left: 0;
 }
 
-.middle-img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 98%;
+header nav a:last-child {
+  margin-right: 0;
 }
 
-.belowContent{
-	border-bottom: 1px solid gray;
-	padding: 10px 0px 10px 0px;
-	margin: 0px 0px 50px 35px;
+header .logo {
+	margin-top: 25px;
+	margin-left:25px;
 }
 
-.belowContent p{
-	width: 400px;
-	height: 50px;
-	padding: 10px;
-	margin: 50px 0px 50px 0px;
-	display: inline-block;
+.cta{
+	display:flex;
 }
 
-address{
-	width: 300px;
-	height: 50px;
-	padding: 10px;
-	margin: 50px 0px 50px 0px;
-	display: inline-block;
+.cta .cta-text {
+  
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
 }
 
-address p{
-	padding: 10px 0px 0px 0px;
-	margin: 10px 0px 0px 0px;
+.cta .cta-text button {
+  
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-footer{
-	padding: 10px 0px 0px 0px;
-	margin: 10px 0px 0px 0px;
-	text-align: center;
-	font-family: 'Mansalva', cursive;
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: flex;
+  margin-top: 69px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+  display:flex;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+  display:flex;
+  
+}
+
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+  display:flex;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
 }

@@ -65,20 +65,31 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 .container {
-  width: 900px;
+  width: 1000px;
   margin: auto;
+  background-color: #222831;
+}
+
+body{
+  background-color: #00adb5;
 }
 
 header nav {
 	display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 header nav a {
-    margin: 52px 15px 0 40px;
+    margin: 52px 30px 0 40px;
     color: grey;
     font-size: 14px;
     text-decoration: none;
+    
+}
+
+header nav a:hover {
+	transform: scale(1.5);
+	color: #484c7f;
 }
 
 img {
@@ -97,8 +108,8 @@ ul {
 }
 
 .logo {
-	margin: 20px 0 0 100px;
-    padding-top: 20px;
+	margin: 20px 0 0 80px;
+  padding-top: 20px;
 }
 
 .top-items {
@@ -107,6 +118,7 @@ ul {
   align-items: center;
   justify-content: space-around;
   margin: 50px 0 50px 0;
+  color: grey;
 }
 
 
@@ -121,21 +133,26 @@ ul {
 button {
   font-size: 16px;
   padding: 5px 40px 5px 40px;
-  border: 1px solid black;
+  border: 1px solid #222831;
+  background-color: #dfcdc3;
+  color: #364f6b; 
 }
 
+button:hover{
+  color: #00adb5;
+}
 .content {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;  
+  border-top: 1px solid #222831;
+  border-bottom: 1px solid green;  
   margin: 30px; 
 }
 
 .content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;  
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;  
+  justify-content: space-evenly;  
+  border-top: 1px solid #222831;
+  border-bottom: 1px solid #222831;  
   margin: 30px;
   padding-bottom: 40px;
 }
@@ -144,7 +161,7 @@ button {
   margin: 40px 0 0 0;
   padding: 20px;
   background: lightgrey;
-  border: 1px solid black;
+  border: 1px solid #222831;
   width: 400px;
 }
 
@@ -155,7 +172,7 @@ button {
   margin-top: 20px;
   font-size: 12px;
   padding: 7px 20px 7px 20px;
-  border: 1px solid black;  
+  border: 1px solid #222831;  
   border-radius: 5px;
 }
 
@@ -182,6 +199,7 @@ address {
 }
 
 .facts {
+  color: grey;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;   
